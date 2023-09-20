@@ -15,7 +15,6 @@ import {
   import { faMagnifyingGlass } from "@fortawesome/free-solid-svg-icons";
   import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
   import { useEffect, useState } from "react";
-  import BrandChild from "./BrandChild/brandChild";
   import { getBrands } from "../../../../services/filterServices";
   export default function BrandFilter(props) {
     const [searchKey, setSearchKey] = useState("");

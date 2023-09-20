@@ -6,12 +6,12 @@ import {
   paginate,
   priceSort,
   filterServices,
-} from "../../../services/filterServices";
+} from "../../../services/filter";
 import {
   setTotalPages,
   setHitOffPageRedux,
   setProducts,
-} from "../../../redux/slices/filterSlice";
+} from "../../../redux/filter";
 import { useDispatch, useSelector } from "react-redux";
 export default function ProductList() {
   const dispatch = useDispatch();
