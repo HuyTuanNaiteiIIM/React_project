@@ -13,6 +13,7 @@ const initialState = {
   products: [],
   isFiltering: false,
 };
+
 const filterSlice = createSlice({
   name: "filter",
   initialState,

@@ -17,6 +17,25 @@ import {
   import { useEffect, useState } from "react";
   import { getBrands } from "../../../../services/filterServices";
   export default function BrandFilter(props) {
+    const styles = {
+        tag: {
+          fontSize: "10px",
+          fontWeight: "700",
+          lineHeight: "1",
+          minH: "16px",
+          minW: "auto",
+          pl: "4px",
+          pr: "4px",
+          bgColor: "dark.50",
+          color: "dark.800",
+          borderRadius: "4px",
+        },
+        title: {
+          color: "dark.1000",
+          fontSize: "14.4px",
+          mr: "8px",
+        },
+      };
     const [searchKey, setSearchKey] = useState("");
     const [brands, setBrands] = useState([]);
     // const brands = useSelector((state) => state.filter.brands);
@@ -136,22 +155,4 @@ import {
       </>
     );
   }
-  const styles = {
-    tag: {
-      fontSize: "10px",
-      fontWeight: "700",
-      lineHeight: "1",
-      minH: "16px",
-      minW: "auto",
-      pl: "4px",
-      pr: "4px",
-      bgColor: "dark.50",
-      color: "dark.800",
-      borderRadius: "4px",
-    },
-    title: {
-      color: "dark.1000",
-      fontSize: "14.4px",
-      mr: "8px",
-    },
-  };
+  

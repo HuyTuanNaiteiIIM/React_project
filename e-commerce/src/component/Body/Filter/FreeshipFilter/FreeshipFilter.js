@@ -1,6 +1,6 @@
 import { FormControl, FormLabel, Switch, Text, VStack } from "@chakra-ui/react";
-import { setIsFreeShipRedux } from "../../../../redux/slices/filterSlice";
 import { useDispatch, useSelector } from "react-redux";
+import { setIsFreeShipRedux } from "../../../../redux/filter";
 export default function FreeshipFilter(props) {
   const dispatch = useDispatch();
   const isFreeShip = useSelector((state) => state.filter.isFreeShip);
